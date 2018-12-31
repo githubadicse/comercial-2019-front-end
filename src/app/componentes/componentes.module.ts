@@ -26,12 +26,16 @@ import { CompFindProveedorClienteListComponent } from './comp-find-proveedor-cli
 import { CompTipoDocumentoSunatComponent } from './comp-tipo-documento-sunat/comp-tipo-documento-sunat.component';
 import { CompFindEmpleadoComponent } from './comp-find-empleado/comp-find-empleado.component';
 import { CompFindFilialComponent } from './comp-find-filial/comp-find-filial.component';
+// tslint:disable-next-line:max-line-length
 import { CompFindTipoDocumentoSunatSoloComponent } from './comp-find-tipo-documento-sunat-solo/comp-find-tipo-documento-sunat-solo.component';
 import { CompFindPeriodoAlmacenComponent } from './comp-find-periodo-almacen/comp-find-periodo-almacen.component';
 import { CompFindProductoAlmacenComponent } from './comp-find-producto-almacen/comp-find-producto-almacen.component';
 import { CompProductoCarritoComponent } from './comp-producto-carrito/comp-producto-carrito.component';
 import { CompFindMonedaComponent } from './comp-find-moneda/comp-find-moneda.component';
 import { CompFindModalidadCompraVentaComponent } from './comp-find-modalidad-compra-venta/comp-find-modalidad-compra-venta.component';
+import { CompFindUnidadMedidaComponent } from './comp-find-unidad-medida/comp-find-unidad-medida.component';
+import { CompFindEnvaseComponent } from './comp-find-envase/comp-find-envase.component';
+import { CompFindUnidadMedidaTrabajoComponent } from './comp-find-unidad-medida-trabajo/comp-find-unidad-medida-trabajo.component';
 
 
 
@@ -40,7 +44,7 @@ import { CompFindModalidadCompraVentaComponent } from './comp-find-modalidad-com
     CommonModule,
     ReactiveFormsModule,
     FormsModule,
-    
+
     MatButtonModule,
     MatFormFieldModule,
     MatInputModule,
@@ -62,15 +66,15 @@ import { CompFindModalidadCompraVentaComponent } from './comp-find-modalidad-com
   declarations: [
     FechaMatComponent,
     CompFindCodigoBarraComponent,
-    CompFindAlmacenComponent, 
-    CompTipoDocumentoIdentidadComponent, 
-    CompFindProveedorClienteRucComponent, 
-    CompFindMedioPagoComponent, 
-    CompFindProductoComponent, 
-    CompFindProductoListComponent, 
-    CompFindMotivoIsAlmacenComponent, 
+    CompFindAlmacenComponent,
+    CompTipoDocumentoIdentidadComponent,
+    CompFindProveedorClienteRucComponent,
+    CompFindMedioPagoComponent,
+    CompFindProductoComponent,
+    CompFindProductoListComponent,
+    CompFindMotivoIsAlmacenComponent,
     CompFindProveedorClienteListComponent,
-    CompFindCodigoBarraComponent, 
+    CompFindCodigoBarraComponent,
     CompTipoDocumentoSunatComponent,
     CompFindEmpleadoComponent,
     CompFindFilialComponent,
@@ -79,20 +83,23 @@ import { CompFindModalidadCompraVentaComponent } from './comp-find-modalidad-com
     CompFindProductoAlmacenComponent,
     CompProductoCarritoComponent,
     CompFindMonedaComponent,
-    CompFindModalidadCompraVentaComponent,    
+    CompFindModalidadCompraVentaComponent,
+    CompFindUnidadMedidaComponent,
+    CompFindEnvaseComponent,
+    CompFindUnidadMedidaTrabajoComponent,
 
   ],
   exports: [
     MatDatepickerModule,
     FechaMatComponent,
-    CompFindAlmacenComponent, 
-    CompTipoDocumentoIdentidadComponent, 
-    CompFindProveedorClienteRucComponent, 
-    CompFindMedioPagoComponent, 
+    CompFindAlmacenComponent,
+    CompTipoDocumentoIdentidadComponent,
+    CompFindProveedorClienteRucComponent,
+    CompFindMedioPagoComponent,
     CompFindProveedorClienteListComponent,
     CompFindProductoComponent,
-    CompFindProductoListComponent, 
-    CompFindCodigoBarraComponent, 
+    CompFindProductoListComponent,
+    CompFindCodigoBarraComponent,
     CompFindMotivoIsAlmacenComponent,
     CompTipoDocumentoSunatComponent,
     CompFindEmpleadoComponent,
@@ -102,8 +109,10 @@ import { CompFindModalidadCompraVentaComponent } from './comp-find-modalidad-com
     CompFindProductoAlmacenComponent,
     CompProductoCarritoComponent,
     CompFindMonedaComponent,
-    CompFindModalidadCompraVentaComponent,    
-
+    CompFindModalidadCompraVentaComponent,
+    CompFindUnidadMedidaComponent,
+    CompFindEnvaseComponent,
+    CompFindUnidadMedidaTrabajoComponent,
   ]
 })
 

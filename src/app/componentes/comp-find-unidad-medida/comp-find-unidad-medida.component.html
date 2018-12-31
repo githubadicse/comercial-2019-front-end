@@ -1,0 +1,8 @@
+<mat-form-field class="w-100">
+<mat-select appNextfocus placeholder="Unidad de medida" [formControl]="_formControlName" [compareWith]="compareUndMedida"
+    (selectionChange)="_onSelectionChange($event)">
+<mat-option *ngFor="let item of ListUnidadMedida" [value]="item">
+      {{item.dscunidadmedida}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>

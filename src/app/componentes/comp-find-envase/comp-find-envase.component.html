@@ -1,0 +1,8 @@
+<mat-form-field class="w-100">
+  <mat-select appNextfocus placeholder="Envase" [formControl]="_formControlName" [compareWith]="compareEnvase"
+    (selectionChange)="_onSelectionChange($event)">
+    <mat-option *ngFor="let item of ListEnvase" [value]="item">
+      {{item.dscEnvase}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
