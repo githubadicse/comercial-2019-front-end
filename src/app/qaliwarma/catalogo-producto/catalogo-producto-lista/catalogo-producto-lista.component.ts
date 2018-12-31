@@ -46,6 +46,8 @@ export class CatalogoProductoListaComponent implements OnInit {
 
   ) { }
 
+
+  //
   ngOnInit() {
     
     let d = new Date();
@@ -64,6 +66,10 @@ export class CatalogoProductoListaComponent implements OnInit {
 
   refreshModel(e, flagFilter?,currentPate?) {
   
+    debugger;
+    let dato = { 'anno': this.anno };
+    this.paramsExtra = this.utilitariosAdicse.setMapToString(dato);
+
     if (flagFilter) {
       e.currentPage = 0;
     }
