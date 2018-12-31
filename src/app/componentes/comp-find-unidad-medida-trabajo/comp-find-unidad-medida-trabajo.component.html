@@ -1,0 +1,8 @@
+<mat-form-field class="w-100">
+  <mat-select appNextfocus placeholder="Unidad Medida Trabajo" [formControl]="_formControlName" [compareWith]="compareUnidadMedidaTrabajo"
+    (selectionChange)="_onSelectionChange($event)">
+    <mat-option *ngFor="let item of ListUnidad" [value]="item">
+      {{item.dscUnidadMedidaTrabajo}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>

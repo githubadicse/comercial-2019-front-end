@@ -1,5 +1,7 @@
 import { UnidadmedidaModel } from "../../modulo-sistema-config/tablas/unidadmedida/unidadmedida-model";
 import { ProductopresentacionModel } from "../../modulo-sistema-config/tablas/producto/model/productopresentacion.model";
+import { EnvaseModel } from '../../modulo-sistema-config/tablas/envase/envase.model';
+import { UnidadmedidatrabajoModel } from '../../modulo-sistema-config/tablas/unidadmedidatrabajo/unidadmedidatrabajo.model';
 
 
 
@@ -9,6 +11,8 @@ export class CatalogoProductoModel {
         public idCatalogoProductoQaliwarma:string="",
         public dscCatalogoProductoQaliwarma=null,
         public unidadmedida:UnidadmedidaModel=null,
+        public envase: EnvaseModel = null,
+        public unidadMedidaTrabajo: UnidadmedidatrabajoModel = null,
         public productoPresentacions:ProductopresentacionModel[]=null,
         public entrega1:boolean=null,
         public entrega2:boolean=null,

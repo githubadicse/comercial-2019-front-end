@@ -12,10 +12,12 @@ import { CatalogoProductoListaItemsComponent } from './catalogo-producto-lista-i
 import { ProductosPorNumeroEntregaComponent } from './productos-por-numero-entrega/productos-por-numero-entrega.component';
 import { HttpClientModule } from '@angular/common/http';
 import { VolumenRequerimiento001Module } from '../requerimiento-volumen-001/volumen-requerimiento-001.module';
+// tslint:disable-next-line:max-line-length
 import { ProductoMultiplicarNivelEducacionComponent } from './producto-multiplicar-nivel-educacion/producto-multiplicar-nivel-educacion.component';
 import {TableModule} from 'primeng/table';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {CalendarModule} from 'primeng/calendar';
+import { ComponentesModule } from 'src/app/componentes/componentes.module';
 
 
 @NgModule({
@@ -35,10 +37,15 @@ import {CalendarModule} from 'primeng/calendar';
     CalendarModule,
     TabViewModule,
     CodeHighlighterModule,
-    MatCheckboxModule
-  
-    
+    MatCheckboxModule,
+    ComponentesModule
   ],
-  declarations: [CatalogoProductoMainComponent, CatalogoProductoListaComponent, CatalogoProductoEdicionComponent, CatalogoProductoListaItemsComponent, ProductosPorNumeroEntregaComponent, ProductoMultiplicarNivelEducacionComponent]
+  declarations: [
+    CatalogoProductoMainComponent,
+    CatalogoProductoListaComponent,
+    CatalogoProductoEdicionComponent,
+    CatalogoProductoListaItemsComponent,
+    ProductosPorNumeroEntregaComponent,
+    ProductoMultiplicarNivelEducacionComponent]
 })
 export class CatalogoProductoModule { }
